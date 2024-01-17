@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "path": "lap13.jpg",
+      "name": "Laptop HP 2023",
+      "description": "Core i5 10Gen 16GB SSD Windows 11 operating system",
+      "rating":"*****"
+
+    },
+    {
+      "id": "2",
+      "path": "shoes.jpg",
+      "name": "Laptop HP 2023",
+      "description": "Core i5 10Gen 16GB SSD Windows 11 operating system",
+      "rating":"*****"
+
+    },
+    {
+      "id": "3",
+      "path":"lap10.avif",
+      "name": "Laptop HP 2023",
+      "description": "Core i5 10Gen 16GB SSD Windows 11 operating system",
+      "rating":"*****"
+
+    },
+    {
+      "id": "4",
+      "path":"tsirt7.avif",
+      "name": "Laptop HP 2023",
+      "description": "Core i5 10Gen 16GB SSD Windows 11 operating system",
+      "rating":"*****"
+
+    },
+    {
+      "id": "5",
+      "path": "sirt3.jpg",
+      "name": "Laptop HP 2023",
+      "description": "Core i5 10Gen 16GB SSD Windows 11 operating system",
+      "rating":"*****"
+
+    },
+    {
+      "id": "6",
+      "path": "mob9.webp",
+      "name": "Laptop HP 2023",
+      "description": "Core i5 10Gen 16GB SSD Windows 11 operating system",
+      "rating":"*****"
+
+    }
+  ]
+  

@@ -1,0 +1,38 @@
+.mainNavbar{
+    width: 100%;
+    background: linear-gradient( #ff6b6b, #5f27cd);
+        color: #fff;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.nav li{
+    position: relative;
+}
+.nav ul li{
+    list-style-type:none;
+    padding: 10px 10px;
+    margin: auto;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background: linear-gradient( #ff6b6b, #5f27cd);
+    /* Adjust the background color as needed */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .flex li:hover .submenu {
+    display: block;
+  }

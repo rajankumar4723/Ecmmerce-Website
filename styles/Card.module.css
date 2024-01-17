@@ -1,0 +1,26 @@
+.card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+.card img {
+    width: 100%;
+    height: 320px; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.card h3 {
+    /* Adjust text styles as needed */
+}
+
+.productName {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.productDescription {
+    color: #666;
+}
