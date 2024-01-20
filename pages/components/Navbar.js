@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className={styles.nav}>
         <ul className={styles.flex}>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" >Home</Link>
           </li>
           <li>
             <Link href="laptop">Laptop</Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/cartpage">Cart</Link>
           </li>
           <li>
             <Link href="/signUp">Signup</Link>

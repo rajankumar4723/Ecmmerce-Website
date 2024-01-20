@@ -79,7 +79,7 @@ const products = [
   // Add more products as needed
 ];
 
-const Women = () => {
+const LaptopCard = () => {
   const { addToCart } = useCart();
 
   return (
@@ -108,4 +108,4 @@ const Women = () => {
   );
 };
 
-export default Women;
+export default LaptopCard;

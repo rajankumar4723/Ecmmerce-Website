@@ -1,6 +1,7 @@
 import React from "react";
 import Men from "./components/Men";
 import Layout from "./components/Layout";
+import Footer from "./components/Footer";
 
 
 const men = () => {
@@ -9,6 +10,7 @@ const men = () => {
       <Layout></Layout>
       
       <Men />
+      <Footer/>
     </div>
   );
 };

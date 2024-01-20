@@ -1,12 +1,14 @@
 import React from "react";
-import Mobile from "./components/Mobile";
+import MobileCard from "./components/MobileCard";
 import Layout from "./components/Layout";
+import Footer from "./components/Footer";
 
 const mobile = () => {
   return (
     <div>
       <Layout></Layout>
-      <Mobile />
+      <MobileCard />
+      <Footer/>
     </div>
   );
 };

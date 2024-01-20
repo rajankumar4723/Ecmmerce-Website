@@ -1,18 +1,16 @@
-"use client"
+import React, { useState } from "react";
 
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Layout from "./components/Layout";
-
-import Link from "next/link";
 import ImageSlider from "./components/ImageSlider";
-import ProductDetailsPage from "./product-details/[productId]";
 import Card from "./components/Card";
+
 import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
+  
   const images = [
     "Best.avif",
     "mob1.jpg",
@@ -21,61 +19,14 @@ export default function Home() {
     "lap6.jpg",
 
     // Add more image URLs as needed
-  ];const images2 = [
+  ];
+  const images2 = [
     "bmob6.avif",
     "blap2.avif",
 
-
     // Add more image URLs as needed
   ];
-  const products = [
-    {
-      id: "1",
-      path: "lap13.jpg",
-      name: "Laptop HP 2023",
-      description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-      rating:"*****"
-    },
-    {
-      id: "2",
-      path: "shoes.jpg",
-      name: "Laptop HP 2023",
-      description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-      rating:"*****",
 
-    },
-    {
-      id: "3",
-      path: "lap10.avif",
-      name: "Laptop HP 2023",
-      description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-      rating:"*****",
-
-    },
-    {
-      id: "4",
-      path: "tsirt7.avif",
-      name: "Laptop HP 2023",
-      description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-      rating:"*****",
-
-    },{
-      id: "5",
-      path: "sirt3.jpg",
-      name: "Laptop HP 2023",
-      description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-      rating:"*****",
-
-    },{
-      id: "6",
-      path: "mob9.webp",
-      name: "Laptop HP 2023",
-      description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-      rating:"*****",
-
-    },
-    // Add more products as needed
-  ];
   return (
     <>
       <Head>
@@ -90,44 +41,12 @@ export default function Home() {
           <div className={styles.silder}>
             <ImageSlider images={images} />
           </div>
-          <div className={styles.smallContainer}>
-            {products.map((product,) => (
-              <Link
-                key={product.id}
-                href={`/product-details/${product.id}`}
-                
-              >
-                <Card
-                  productId={product.id}
-                  imagePath={product.path}
-                  productName={product.name}
-                  productDescription={product.description}
-                />
-              </Link>
-            ))}
-          </div>
+          <Card />
+          {/* <Cart cartItems={cartItems} removeFromCart={removeFromCart} /> */}
 
-         
           <ImageSlider images={images2} />
-          <div className={styles.smallContainer}>
-            {products.map((product,) => (
-              <Link
-                key={product.id}
-                href={`/product-details/${product.id}`}
-                
-              >
-                <Card
-                  productId={product.id}
-                  imagePath={product.path}
-                  productName={product.name}
-                  productDescription={product.description}
-                />
-              </Link>
-            ))}
-          </div>
-        
         </div>
-        <Footer/>
+        <Footer />
       </main>
     </>
   );

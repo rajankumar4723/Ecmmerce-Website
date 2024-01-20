@@ -1,13 +1,15 @@
 import React from "react";
-import Laptop from "./components/Laptop";
 import Layout from "./components/Layout";
+import LaptopCard from "./components/LaptopCard";
+import Footer from "./components/Footer";
 
 const laptop = () => {
   return (
     
     <div>
       <Layout></Layout>
-      <Laptop />
+      <LaptopCard/>
+      <Footer/>
     </div>
   );
 };

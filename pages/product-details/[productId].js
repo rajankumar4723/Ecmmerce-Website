@@ -1,5 +1,3 @@
-// ProductDetailsPage.js
-"use client"
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import mockData from "../../MockData.json";
@@ -14,7 +12,6 @@ const ProductDetailsPage = () => {
   const [loading, setLoading] = useState(true);
 
   // State for managing the cart
-  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     const getProductData = async () => {
@@ -35,18 +32,11 @@ const ProductDetailsPage = () => {
 
     getProductData();
   }, [productId]);
-
-  // Function to handle adding product to the cart
-  const handleAddToCart = () => {
-    if (product) {
-      // Copy the existing cart and add the selected product
-      const updatedCart = [...cart, product];
-      setCart(updatedCart);
-      console.log("Product added to the cart:", product);
-      router.push("/cart");
-
-    }
+  const handleGoBack = () => {
+    router.back();
   };
+  // Function to handle adding product to the cart
+ 
 
   return (
     <div>
@@ -63,9 +53,13 @@ const ProductDetailsPage = () => {
               />
               <h3>{product.name}</h3>
               <p>{product.description}</p>
+              <p>Price {product.price}</p>
               <Rating />
-              <button onClick={handleAddToCart}>Add to Cart</button>
-              <button>Buy</button>
+              <button onClick={handleGoBack}>Go Back</button>
+              <button>Add To Cart</button>
+          <button>Buy Now</button>
+
+           
             </div>
           ) : (
             <p>No product data found.</p>
