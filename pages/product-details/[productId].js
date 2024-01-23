@@ -35,8 +35,13 @@ const ProductDetailsPage = () => {
   const handleGoBack = () => {
     router.back();
   };
+  const goToCart = () => {
+    router.push("/cartpage");
+  };
+  const goToCheckout = () => {
+    router.push("/checkout");
+  };
   // Function to handle adding product to the cart
- 
 
   return (
     <div>
@@ -56,10 +61,8 @@ const ProductDetailsPage = () => {
               <p>Price {product.price}</p>
               <Rating />
               <button onClick={handleGoBack}>Go Back</button>
-              <button>Add To Cart</button>
-          <button>Buy Now</button>
-
-           
+              <button onClick={goToCart}>Go To Cart</button>
+              <button onClick={goToCheckout}>Buy Now</button>
             </div>
           ) : (
             <p>No product data found.</p>

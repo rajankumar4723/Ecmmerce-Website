@@ -1,9 +1,11 @@
 // components/LoginForm.js
 import React, { useState } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import {db} from "@/pages/firebaseConfig";
+import { db } from "@/pages/firebaseConfig";
 import { useRouter } from "next/router";
+import styles from "@/styles/Login.module.css";
 
+import Link from "next/link";
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,14 +33,15 @@ const LoginForm = () => {
   };
 
   return (
-    <div>
+    <div className={styles.signupContainer}>
       <h2>Login</h2>
-      <form>
+      <form className={styles.signupform}>
         <label>Email:</label>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className={styles.inputfield}
         />
         <br />
         <label>Password:</label>
@@ -46,13 +49,16 @@ const LoginForm = () => {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className={styles.inputfield}
         />
         <br />
+        <p> Sign up here</p>
         <button type="button" onClick={handleLogin}>
           Login
         </button>
+        <Link href="/signUp">Signup</Link>
       </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p className={styles.errormessage}>{error}</p>}
     </div>
   );
 };

@@ -10,51 +10,51 @@ const Navbar = () => {
   // };
   return (
     <div className={styles.mainNavbar}>
-      <nav className={styles.nav}>
+      <div className={styles.nav}>
         <ul className={styles.flex}>
           <li>
-            <Link href="/" >Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="laptop">Laptop</Link>
+            <Link href="/laptop/laptop">Laptop</Link>
             <ul className={styles.submenu}>
               <li>
-                <Link href="/men/shirts">Android</Link>
+                <Link href="/laptop/hp">HP</Link>
               </li>
               <li>
-                <Link href="/men/pants">Apple</Link>
+                <Link href="/laptop/apple">Apple</Link>
               </li>
               <li>
-                <Link href="/men/pants">Vivo</Link>
+                <Link href="/laptop/dell">Dell</Link>
               </li>
               <li>
-                <Link href="/men/pants">SumSung</Link>
+                <Link href="/laptop/lenvo">Lenvo</Link>
               </li>
 
               {/* Add more Men's links as needed */}
             </ul>
           </li>{" "}
           <li>
-            <Link href="mobile">Mobile</Link>
+            <Link href="/mobile/mobile">Mobile</Link>
             <ul className={styles.submenu}>
-              <li>
-                <Link href="/men/shirts">Android</Link>
+            <li>
+                <Link href="/mobile/vivo">Vivo</Link>
               </li>
               <li>
-                <Link href="/men/pants">Apple</Link>
+                <Link href="/mobile/apple">Apple</Link>
               </li>
               <li>
-                <Link href="/men/pants">Vivo</Link>
+                <Link href="/mobile/android">Android</Link>
               </li>
               <li>
-                <Link href="/men/pants">SumSung</Link>
+                <Link href="/mobile/Sumsung">SumSung</Link>
               </li>
 
               {/* Add more Men's links as needed */}
             </ul>
           </li>
           <li>
-            <Link href="/men">Men's</Link>
+            <Link href="/men/men">Men's</Link>
             <ul className={styles.submenu}>
               <li>
                 <Link href="/men/pants">Shirts</Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link href="/women">Women's</Link>
+            <Link href="/women/women">Women's</Link>
             <ul className={styles.submenu}>
               <li>
                 <Link href="/women/dresses">Dresses</Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
           </li>
           {/* Add more navigation links as needed */}
         </ul>
-      </nav>
+      </div>
     </div>
   );
 };

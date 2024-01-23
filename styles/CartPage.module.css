@@ -1,0 +1,15 @@
+.main{
+    max-width: 100%;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+    height: 100vh;
+    padding: 40px;
+
+}
+.main ul{
+    list-style: none;
+}
+.main img{
+    border-radius: 10px;
+    width: 500px;
+}

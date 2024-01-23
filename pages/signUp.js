@@ -1,6 +1,7 @@
 import React from "react";
 import SignupForm from "./components/SignupForm";
 import Layout from "./components/Layout";
+
 const signUp = () => {
   return (
     <div>

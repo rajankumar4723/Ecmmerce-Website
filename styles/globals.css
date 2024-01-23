@@ -9,10 +9,10 @@
 body{
     background-color: #fff;
 }
-/* a{
+a{
     text-decoration: none;
-} */
-button{
+}
+/* button{
     padding: 10px 20px;
     margin-left: 5px;
     color: blue;
@@ -22,6 +22,21 @@ button{
     border: none;
 }
 button:hover {
+    color: #fff;
+    background-color: darkturquoise;
+} */
+button{
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: blue;
+
+}
+button:hover{
     color: #fff;
     background-color: darkturquoise;
 }

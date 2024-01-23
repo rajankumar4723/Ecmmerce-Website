@@ -1,7 +1,7 @@
 import React from "react";
-import MobileCard from "./components/MobileCard";
-import Layout from "./components/Layout";
-import Footer from "./components/Footer";
+import MobileCard from "../components/MobileCard";
+import Layout from "../components/Layout";
+import Footer from "../components/Footer";
 
 const mobile = () => {
   return (

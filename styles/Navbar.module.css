@@ -50,3 +50,7 @@
     font-weight: bold;
     color: yellow; /* Change the color as needed */
   }
+  @media screen and (max-width: 768px) {
+    
+    
+  }

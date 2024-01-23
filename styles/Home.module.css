@@ -1,28 +1,16 @@
 .container{
     width: 100%;
     height: auto;
+    overflow: hidden;
 
 }
 .silder{
     width: 100%; 
     height: 500px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 /* styles.module.css */
 
-.smallContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 16px;
-}
 
-
-.header {
-    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-  justify-content: center;
-
-}

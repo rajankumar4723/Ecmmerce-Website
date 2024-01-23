@@ -2,85 +2,90 @@
 import React from "react";
 import Link from "next/link";
 import styles from "@/styles/Laptop.module.css";
+import { useRouter } from "next/router"; // Import the useRouter hook
+
 import Rating from "./Rating";
 import { useCart } from "../CartContext";
 
 const products = [
   {
     id: "7",
-    path: "lap7.jpg",
+    path: "/lap7.jpg",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 21000,
   },
   {
     id: "8",
-    path: "lap8.avif",
+    path: "/lap8.avif",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-    price: 11000
+    price: 11000,
   },
   {
     id: "9",
-    path: "lap10.avif",
+    path: "/lap10.avif",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 3300,
   },
   {
     id: "10",
-    path: "lap12.webp",
+    path: "/lap12.webp",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 66000,
-
   },
   {
     id: "11",
-    path: "lap15.jpg",
+    path: "/lap15.jpg",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 77000,
-
   },
   {
     id: "12",
-    path: "lap17.avif",
+    path: "/lap17.avif",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 24000,
-
   },
   {
     id: "13",
-    path: "lap5.jpg",
+    path: "/lap5.jpg",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 15000,
-
   },
   {
     id: "14",
-    path: "blap2.avif",
+    path: "/blap2.avif",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 75800,
-
   },
   {
     id: "15",
-    path: "laptop1.avif",
+    path: "/laptop1.avif",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 20000,
-
   },
-  
+
   // Add more products as needed
 ];
 
 const Men = () => {
   const { addToCart } = useCart();
+  const router = useRouter(); // Use the useRouter hook
+
+  const goToCart = () => {
+    // Navigate to the cart page when Go To Cart is clicked
+    router.push("/cartpage");
+  };
+  const goToCheck = () => {
+    router.push("/checkout");
+  };
 
   return (
     <div className={styles.smallContainer}>
@@ -99,8 +104,8 @@ const Men = () => {
           <h4>Price {product.price}</h4>
           <Rating />
           <button onClick={() => addToCart(product)}>Add To Cart</button>
-          <button>Buy Now</button>
-          <button>Like</button>
+          <button onClick={goToCheck}>Buy Now</button>
+          <button onClick={goToCart}>Go To Cart</button>
           {/* Add other card content as needed */}
         </div>
       ))}

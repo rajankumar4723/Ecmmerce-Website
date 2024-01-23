@@ -1,7 +1,18 @@
-.productDetails{
-    width: 100%;
-   
+.productDetails {
+    max-width: 100%;
+    margin: auto;
+    height: 95vh;
+    margin-top: 30px;
+    background: linear-gradient(to right, #ff8c00, #ff4c4c);
+    color: #fff;
+    padding: 25px;
 }
-.productDetails img{
+
+.productDetails img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.productDetails img {
     width: 600px;
 }
