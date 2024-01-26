@@ -9,8 +9,83 @@
     height: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
+    /* border: 1px solid red; */
+
+}
+.smallContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 380px;
+    transition: box-shadow 0.3s ease;
+   /* Adding a smooth transition for a better user experience */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Highlight effect on hover */
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 8px;
     
 }
+
+
+
+.productName {
+    font-size: 20px;
+}
+
+.productDescription {
+    color: #666;
+    font-size: 16px;
+}
+.price{
+  font-size: 17px;
+  color: #666;
+
+
+}
+
+  
+  /* Mobile View */
+  @media only screen and (max-width: 767px) {
+    .card {
+      height: auto; /* Adjust height for better mobile appearance */
+    }
+  
+    .card img {
+      height: 200px; /* Adjust height for better mobile appearance */
+    }
+    .silder{
+      width: 100%; 
+      height: 268px;
+      margin-top: 0px;
+      margin-bottom: 5px;
+  }
+  }
+  
+  /* Tablet View */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  
+  }
+  
+  /* Laptop View */
+  @media only screen and (min-width: 1024px) {
+    /* Styles specific to laptops and larger screens */
+    /* You can add specific styles for laptops here */
+  }
+  
+
+
 /* styles.module.css */
 
 

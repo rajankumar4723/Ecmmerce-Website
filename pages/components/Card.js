@@ -1,7 +1,7 @@
 // card.js code
 import React from "react";
 import Link from "next/link";
-import styles from "@/styles/Card.module.css";
+import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";  // Import the useRouter hook
 import Rating from "./Rating";
 import { useCart } from "../CartContext";

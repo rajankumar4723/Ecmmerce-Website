@@ -1,56 +1,78 @@
 .mainNavbar {
-    width: 100%;
-    background: linear-gradient(#ff6b6b, #5f27cd);
-    color: #fff;
-    position: fixed;
-    top: 0;
+  background: linear-gradient(#ff6b6b, #5f27cd);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a:hover {
+  color: rgb(31, 29, 29);
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav ul li {
+  list-style-type: none;
+  padding: 10px 10px;
+  margin: auto;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background: linear-gradient(#ff6b6b, #5f27cd);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.flex li:hover .submenu {
+  display: block;
+}
+
+/* Add styles for the active link */
+
+.mobileToggle {
+  display: none;
+  /* Hide by default for larger screens */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .mobileToggle {
+    display: block;
+    /* Show for smaller screens */
   }
 
   .flex {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav a {
-    text-decoration: none;
-    color: #fff;
-  }
-  .nav a:hover {
-    color: rgb(31, 29, 29);
-  }
-
-  .nav li {
-    position: relative;
-  }
-
-  .nav ul li {
-    list-style-type: none;
-    padding: 10px 10px;
-    margin: auto;
-  }
-
-  .submenu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    background: linear-gradient(#ff6b6b, #5f27cd);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Hide the menu by default for smaller screens */
   }
 
-  .flex li:hover .submenu {
-    display: block;
+  .flex.open {
+    display: flex;
+    /* Show the menu when isNavOpen is true */
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+ 
 
-  /* Add styles for the active link */
-  .nav a.active {
-    font-weight: bold;
-    color: yellow; /* Change the color as needed */
-  }
-  @media screen and (max-width: 768px) {
-    
-    
-  }
+}

@@ -1,17 +1,21 @@
-// components/Navbar.js
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
-  // const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isNavOpen, setNavOpen] = useState(false);
 
-  // const toggleMobileMenu = () => {
-  //   setMobileMenuOpen(!isMobileMenuOpen);
-  // };
+  const toggleMobileMenu = () => {
+    setNavOpen(!isNavOpen);
+  };
+
   return (
     <div className={styles.mainNavbar}>
       <div className={styles.nav}>
-        <ul className={styles.flex}>
+        <div className={styles.mobileToggle} onClick={toggleMobileMenu}>
+          <span>&#9776;</span> {/* Unicode for hamburger icon */}
+        </div>
+        <ul className={`${styles.flex} ${isNavOpen ? styles.open : ""}`}>
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -37,7 +41,7 @@ const Navbar = () => {
           <li>
             <Link href="/mobile/mobile">Mobile</Link>
             <ul className={styles.submenu}>
-            <li>
+              <li>
                 <Link href="/mobile/vivo">Vivo</Link>
               </li>
               <li>
