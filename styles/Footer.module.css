@@ -19,7 +19,8 @@
 }
 
 .footerlogo img {
-    width: 100px;
+    width: 150px;
+    margin-right: 15px;
     /* Adjust the logo width */
 }
 
@@ -54,6 +55,9 @@
     }
     .footer a{
         font-size: 9px;
+    }
+    .footerlogo img{
+        width: 100px;
     }
     
 

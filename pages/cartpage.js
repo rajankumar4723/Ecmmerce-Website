@@ -3,6 +3,7 @@ import React from "react";
 import { useCart } from "../pages/CartContext";
 import  styles from "../styles/CartPage.module.css";
 import Layout from "./components/Layout";
+import Footer from "./components/Footer";
 const CartPage = () => {
   const { cartItems, removeFromCart, clearCart } = useCart();
 
@@ -40,6 +41,7 @@ const CartPage = () => {
       )}
       {cartItems.length > 0 && <button onClick={handleBuyNow}>Buy Now</button>}
     </div>
+    <Footer/>
     </div>
 
   );

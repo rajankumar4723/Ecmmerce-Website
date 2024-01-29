@@ -2,8 +2,9 @@
     max-width: 100%;
     background: linear-gradient(to right, #3498db, #2980b9);
     color: #fff;
-    height: 100vh;
+    height: 77vh;
     padding: 40px;
+    overflow: hidden;
 
 }
 .main ul{
@@ -12,4 +13,17 @@
 .main img{
     border-radius: 10px;
     width: 500px;
+}
+@media only screen and (max-width: 767px) {
+    .main{
+        padding: 10px;
+
+    }
+    .main img{
+        border-radius: 10px;
+        width: 300px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
 }

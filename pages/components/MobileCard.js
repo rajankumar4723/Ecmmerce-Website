@@ -30,6 +30,20 @@ const products = [
     price: 1300,
   },
   {
+    id: "23",
+    path: "/mob7.jpg",
+    name: "Laptop HP 2023",
+    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
+    price: 75800,
+  },
+  {
+    id: "23",
+    path: "/mob7.jpg",
+    name: "Laptop HP 2023",
+    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
+    price: 75800,
+  },
+  {
     id: "19",
     path: "/mob4.jpg",
     name: "Vivo Max Pro",
@@ -42,6 +56,13 @@ const products = [
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 17000,
+  },
+  {
+    id: "16",
+    path: "/mob1.jpg",
+    name: "Mobile 2023",
+    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
+    price: 10000,
   },
   {
     id: "21",
@@ -101,7 +122,7 @@ const MobileCard = () => {
           </Link>
           <h3 className={styles.productName}>{product.name}</h3>
           <p className={styles.productDescription}>{product.description}</p>
-          <h4>Price {product.price}</h4>
+          <h4 className={styles.price}>Price {product.price}</h4>
           <Rating />
           <button onClick={() => addToCart(product)}>Add To Cart</button>
           <button onClick={goToCheck}>Buy Now</button>
