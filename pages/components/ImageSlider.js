@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-
-
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -18,26 +16,26 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div
-    style={{
-      width: '100%',
-      height: 'auto',
-      padding: 5,
-      marginTop: 40,
-      maxHeight: '500px',  // Default height for laptop view
-      overflow: 'hidden',  // Hide overflow for cases when the image exceeds maxHeight
-    }}
-  >
-    <img
-      src={images[currentIndex]}
-      alt={`Slide ${currentIndex + 1}`}
       style={{
         width: '100%',
-        height: '100%',
-        objectFit: '',
-        borderRadius: 8,
+        height: 'auto',
+        padding: 5,
+        marginTop: 40,
+        maxHeight: '500px',  // Default height for laptop view
+        overflow: 'hidden',  // Hide overflow for cases when the image exceeds maxHeight
       }}
-    />
-  </div>
+    >
+      <img
+        src={images[currentIndex]}
+        alt={`Slide ${currentIndex + 1}`}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',  // Set a valid value for objectFit
+          borderRadius: 8,
+        }}
+      />
+    </div>
   );
 };
 

@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";  // Import the useRouter hook
 import Rating from "./Rating";
 import { useCart } from "../CartContext";
+// import Image from "next/image";
 
 const products = [
   {
@@ -45,23 +46,23 @@ const products = [
 
   },
   {
-    id: "3",
-    path: "lap10.avif",
+    id: "6",
+    "path": "mob9.webp",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     "price": 12000
   },
   {
-    id: "4",
-    path: "tsirt7.avif",
+    id: "7",
+    "path": "lap7.jpg",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     "price": 33300
 
   },
   {
-    id: "5",
-    path: "sirt3.jpg",
+    id: "8",
+    "path": "lap8.avif",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     "price": 50000

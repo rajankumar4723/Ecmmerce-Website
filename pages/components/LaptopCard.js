@@ -50,43 +50,43 @@ const products = [
     price: 24000
   },
   {
-    id: "7",
-    path: "/lap7.jpg",
-    name: "Laptop HP 2023",
-    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-    price: 21000
-  },
-  {
-    id: "8",
-    path: "/lap8.avif",
-    name: "Laptop HP 2023",
-    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-    price: 11000
-  },
-  {
     id: "13",
-    path: "/lap5.jpg",
-    name: "Laptop HP 2023",
-    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
-    price: 15000
-  },
-  {
-    id: "7",
-    path: "/lap7.jpg",
+    "path": "/lap5.jpg",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 21000
   },
   {
     id: "14",
-    path: "/blap2.avif",
+    "path": "/blap2.avif",
+    name: "Laptop HP 2023",
+    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
+    price: 11000
+  },
+  {
+    id: "15",
+    "path": "/laptop1.avif",
+    name: "Laptop HP 2023",
+    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
+    price: 15000
+  },
+  {
+    id: "16",
+    "path": "/mob1.jpg",
+    name: "Laptop HP 2023",
+    description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
+    price: 21000
+  },
+  {
+    id: "17",
+    "path": "/mob2.png",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 75800
   },
   {
-    id: "15",
-    path: "/laptop1.avif",
+    id: "18",
+    "path": "/mob3.avif",
     name: "Laptop HP 2023",
     description: "Core i5 10Gen 16GB SSD Windows 11 operating system",
     price: 20000
