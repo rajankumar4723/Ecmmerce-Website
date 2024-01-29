@@ -10,21 +10,21 @@ import Card from "./components/Card";
 import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
-  const images = [
-    "Best.avif",
-    "mob1.jpg",
-    "lap8.avif",
-    "lap5.jpg",
-    "lap6.jpg",
+  // const images = [
+  //   "Best.avif",
+  //   "mob1.jpg",
+  //   "lap8.avif",
+  //   "lap5.jpg",
+  //   "lap6.jpg",
 
-    // Add more image URLs as needed
-  ];
-  const images2 = [
-    "bmob6.avif",
-    "blap2.avif",
+  //   // Add more image URLs as needed
+  // ];
+  // const images2 = [
+  //   "bmob6.avif",
+  //   "blap2.avif",
 
-    // Add more image URLs as needed
-  ];
+  //   // Add more image URLs as needed
+  // ];
 
   return (
     <          >
@@ -37,14 +37,14 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <Layout></Layout>
         <div className={styles.container}>
-          <div className={styles.silder}>
+          {/* <div className={styles.silder}>
             <ImageSlider images={images} />
-          </div>
+          </div> */}
           <Card />
           {/* <Cart cartItems={cartItems} removeFromCart={removeFromCart} /> */}
-          <div className={styles.silder}>
+          {/* <div className={styles.silder}>
             <ImageSlider images={images2} />
-          </div>{" "}
+          </div>{" "} */}
         </div>
         <Footer />
       </main>

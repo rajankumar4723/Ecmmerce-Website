@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     overflow: hidden;
+    margin-top: 40px;
 
 }
 .silder{
@@ -16,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
+    
   }
   .card {
     background-color: #fff;
