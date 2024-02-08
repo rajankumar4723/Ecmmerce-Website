@@ -4,7 +4,7 @@ import mockData from "../../MockData.json";
 import styles from "@/styles/Products.module.css";
 import Rating from "../components/Rating";
 import Layout from "../components/Layout";
-
+import Image from "next/image";
 const ProductDetailsPage = () => {
   const router = useRouter();
   const { productId } = router.query;
@@ -52,7 +52,7 @@ const ProductDetailsPage = () => {
           <Layout />
           {product ? (
             <div className={styles.productDetails}>
-              <img
+              <Image
                 src={`/${product.path}`}
                 alt={`Product Image for ${product.name}`}
               />
